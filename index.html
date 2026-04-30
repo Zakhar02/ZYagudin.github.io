@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zakhar Yagudin | Robotics Engineer</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #222;
+      background: #f6f7f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #101820;
+      color: white;
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    h1 {
+      font-size: 46px;
+      margin: 0 0 10px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    header a {
+      color: #8cc8ff;
+    }
+
+    .tagline {
+      font-size: 21px;
+      color: #ddd;
+      margin-bottom: 18px;
+    }
+
+    .links a {
+      margin-right: 16px;
+      font-weight: bold;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      margin: 22px 0;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 330px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      max-height: 260px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e8eef6;
+      padding: 7px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #666;
+    }
+
+    @media (max-width: 850px) {
+      .hero,
+      .project {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container hero">
+    <div>
+      <h1>Zakhar Yagudin</h1>
+      <p class="tagline">
+        Robotics Engineer | Autonomous Driving | Computer Vision | Multi-modal Perception
+      </p>
+
+      <p>
+        I build perception and control systems for autonomous vehicles, mobile robots,
+        and safety-critical AI applications.
+      </p>
+
+      <div class="links">
+        <a href="mailto:Zakhar.Yagudin@skoltech.ru">Email</a>
+        <a href="https://www.linkedin.com/in/zakhar-yagudin" target="_blank">LinkedIn</a>
+        <a href="CV.pdf" target="_blank">Download CV</a>
+      </div>
+    </div>
+
+    <img src="assets/profile.jpg" alt="Zakhar Yagudin with A2RL autonomous race car">
+  </div>
+</header>
+
+<main class="container">
+
+  <section>
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        I am a Robotics Engineer specializing in autonomous driving, multi-modal perception,
+        computer vision, and control systems. My work focuses on real-time 3D object detection,
+        sensor fusion, MPC-based control, and end-to-end autonomous driving systems.
+      </p>
+
+      <p>
+        My experience combines research, industrial software development, and technical leadership
+        across autonomous trucks, autonomous racing, mobile robotics, and self-driving car platforms.
+        I have worked with C/C++, Python, ROS, PyTorch, computer vision, deep learning, sensor fusion,
+        and optimal control.
+      </p>
+
+      <p>
+        I am especially interested in robust 3D perception, self-supervised feature learning,
+        multi-modal detection under limited labeled data, and scalable autonomy systems for real-world deployment.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Featured Projects</h2>
+
+    <div class="card project">
+      <img src="assets/a2rl-car.jpg" alt="A2RL autonomous race car">
+      <div>
+        <h3>A2RL / Team FlyEagle — Autonomous Racing Perception</h3>
+        <div class="meta">Lead Computer Vision Engineer | Abu Dhabi, UAE | 2024–Present</div>
+
+        <p>
+          Developed real-time 3D object detection algorithms for autonomous racing systems while
+          leading a small computer vision team. The work focused on high-speed perception,
+          robustness under dynamic racing conditions, and integration into an autonomous driving stack.
+        </p>
+
+        <p>
+          <span class="highlight">Result:</span> Contributed to achieving
+          <span class="highlight">2nd place in the A2RL Silver Race</span>.
+        </p>
+
+        <p>
+          <strong>Technologies:</strong> Computer Vision, 3D Object Detection, Sensor Fusion,
+          PyTorch, ROS, Autonomous Driving.
+        </p>
+      </div>
+    </div>
+
+    <div class="card project">
+      <img src="assets/ku-lab.jpg" alt="Khalifa University self-driving car laboratory">
+      <div>
+        <h3>Khalifa University — Self-Driving Cars Laboratory</h3>
+        <div class="meta">Research Mobility Program | Abu Dhabi, UAE | 2025</div>
+
+        <p>
+          Conducted research in autonomous driving perception within the Self-Driving Cars Laboratory
+          at Khalifa University. The work focused on perception systems, autonomous mobility platforms,
+          and applied robotics research.
+        </p>
+
+        <p>
+          <strong>Focus:</strong> Self-driving cars, perception, 3D detection, autonomous mobility.
+        </p>
+      </div>
+    </div>
+
+    <div class="card project">
+      <img src="assets/168robotics.jpg" alt="168Robotics autonomous cleaning robot">
+      <div>
+        <h3>168ROBOTICS — Multi-modal 3D Object Detection</h3>
+        <div class="meta">Researcher, Computer Vision | Moscow, Russia | 2024–Present</div>
+
+        <p>
+          Researched and developed multi-modal 3D object detection methods for autonomous mobile
+          robotics platforms. The work involved deep learning, sensor fusion, model evaluation,
+          and integration into real robotic systems.
+        </p>
+
+        <p>
+          <span class="highlight">Result:</span> Improved detection accuracy from
+          <span class="highlight">70% to 80%</span>.
+        </p>
+
+        <p>
+          <strong>Technologies:</strong> Deep Learning, Vision Transformers, Multi-modal Perception,
+          Sensor Fusion, 3D Object Detection.
+        </p>
+      </div>
+    </div>
+
+    <div class="card project">
+      <img src="assets/ozon-truck-1.jpg" alt="Ozon Tech autonomous truck">
+      <div>
+        <h3>Ozon Tech — Autonomous Truck Control System</h3>
+        <div class="meta">Software Engineer, Autonomous Driving | Innopolis, Russia | 2021–2024</div>
+
+        <p>
+          Developed C/C++ software components for autonomous truck control systems and contributed
+          to integration within the full autonomous driving stack. The work included control-system
+          design, testing, debugging, and applied robotics software development.
+        </p>
+
+        <p>
+          <span class="highlight">Impact:</span> Contributed to early autonomous truck systems
+          deployment in Europe.
+        </p>
+
+        <p>
+          <strong>Technologies:</strong> C/C++, Control Systems, MPC, ROS, Autonomous Trucks,
+          Robotics Software.
+        </p>
+      </div>
+    </div>
+
+    <div class="card project">
+      <img src="assets/innopolis-cars.jpg" alt="Self-driving cars at Innopolis University">
+      <div>
+        <h3>Innopolis University — Self-Driving Cars</h3>
+        <div class="meta">Robotics Laboratory | Innopolis, Russia</div>
+
+        <p>
+          Worked on self-driving car development in a university robotics laboratory, including
+          control modules, network interfaces, low-level software, and system integration.
+        </p>
+
+        <p>
+          <strong>Focus:</strong> Autonomous vehicles, control systems, embedded software,
+          low-level integration.
+        </p>
+      </div>
+    </div>
+
+    <div class="card project">
+      <img src="assets/battle-robots.jpg" alt="Battle of Robots competition robot">
+      <div>
+        <h3>Battle of Robots — RobOZON Team</h3>
+        <div class="meta">Robotics Competition</div>
+
+        <p>
+          Participated in the Battle of Robots competition with team RobOZON, contributing to
+          the development and preparation of a competitive robotic platform.
+        </p>
+
+        <p>
+          <strong>Focus:</strong> Robotics engineering, mechanical integration, testing,
+          competition-driven development.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Additional Autonomous Vehicle Work</h3>
+      <p>
+        Additional work includes autonomous trucks at Ozon Tech and self-driving vehicle projects
+        at Innopolis University.
+      </p>
+
+      <div class="gallery">
+        <img src="assets/ozon-truck-2.jpg" alt="Autonomous truck public-road testing visualization">
+        <img src="assets/ozon-truck-3.jpg" alt="Autonomous trucks in garage">
+        <img src="assets/innopolis-truck.jpg" alt="Autonomous truck at Innopolis University">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research & Publications</h2>
+
+    <div class="card">
+      <h3>Selected Research Areas</h3>
+      <p>
+        My research focuses on autonomous driving, multi-modal perception, real-time 3D object detection,
+        sensor fusion, vision transformers, and end-to-end autonomous driving models.
+      </p>
+
+      <ul>
+        <li><strong>ICRA 2025:</strong> Multi-modal end-to-end autonomous driving with temporal guidance.</li>
+        <li><strong>IROS 2025:</strong> Lightweight real-time 3D detection for autonomous driving and robotics.</li>
+        <li><strong>FLLM 2024:</strong> VLM-based autonomous driving assistant for complex road scenes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Entrepreneurship</h2>
+
+    <div class="card">
+      <h3>TECHFRENS</h3>
+      <div class="meta">CEO | Blockchain & Software Development</div>
+      <p>
+        Leading a small development team delivering blockchain-related software projects
+        from concept to deployment.
+      </p>
+      <p>
+        <a href="https://techfrens.pro/" target="_blank">techfrens.pro</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Straighten Up!</h3>
+      <div class="meta">Founder & CEO | Health, Fitness and Well-being Startup</div>
+      <p>
+        Founded a startup focused on posture, health, fitness, and well-being.
+        The project is registered at Skolkovo Foundation.
+      </p>
+      <p>
+        <a href="https://straightenup.netlify.app/" target="_blank">straightenup.netlify.app</a>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+
+    <div class="card">
+      <h3>Skoltech</h3>
+      <div class="meta">MSc in Robotics | Moscow, Russia | 2023–2025</div>
+      <p><strong>GPA:</strong> 5.0/5.0</p>
+      <p>
+        Focus: Autonomous Driving, Multi-modal Perception, Deep Learning.
+        Research: 3D Object Detection using Vision Transformers and Sensor Fusion.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Innopolis University</h3>
+      <div class="meta">BSc in Computer Science, Robotics | Innopolis, Russia | 2019–2023</div>
+      <p><strong>GPA:</strong> 4.6/5.0</p>
+      <p>
+        Thesis: Controller design for autonomous vehicles using MPC, CLF/CBF,
+        and optimization-based control.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+
+    <div class="card skills">
+      <span>C/C++</span>
+      <span>Python</span>
+      <span>ROS</span>
+      <span>PyTorch</span>
+      <span>Computer Vision</span>
+      <span>3D Object Detection</span>
+      <span>Sensor Fusion</span>
+      <span>Deep Learning</span>
+      <span>Vision Transformers</span>
+      <span>MPC</span>
+      <span>Optimal Control</span>
+      <span>Autonomous Driving</span>
+      <span>Robotics Software</span>
+      <span>Embedded Systems</span>
+      <span>Technical Leadership</span>
+      <span>Project Ownership</span>
+      <span>Cross-functional Collaboration</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+
+    <div class="card">
+      <p>
+        I am interested in robotics, autonomous driving, computer vision, multi-modal perception,
+        and applied AI roles.
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:Zakhar.Yagudin@skoltech.ru">Zakhar.Yagudin@skoltech.ru</a>
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/zakhar-yagudin" target="_blank">
+          linkedin.com/in/zakhar-yagudin
+        </a>
+      </p>
+
+      <p>
+        <strong>CV:</strong>
+        <a href="CV.pdf" target="_blank">Download PDF</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Zakhar Yagudin
+</footer>
+
+</body>
+</html>
