@@ -129,6 +129,32 @@
       font-size: 14px;
     }
 
+    .publication-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .publication-list li {
+      padding: 18px 0;
+      border-bottom: 1px solid #e6e8eb;
+    }
+
+    .publication-list li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .publication-title {
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .publication-note {
+      margin: 8px 0 0;
+    }
+
     footer {
       text-align: center;
       padding: 35px;
@@ -166,7 +192,7 @@
       <div class="links">
         <a href="mailto:Zakhar.Yagudin@skoltech.ru">Email</a>
         <a href="https://www.linkedin.com/in/zakhar-yagudin" target="_blank">LinkedIn</a>
-        <a href="CV.pdf" target="_blank">Download CV</a>
+        <a href="assets/CV.pdf" target="_blank">Download CV</a>
       </div>
     </div>
 
@@ -194,7 +220,8 @@
 
       <p>
         I am especially interested in robust 3D perception, self-supervised feature learning,
-        multi-modal detection under limited labeled data, and scalable autonomy systems for real-world deployment.
+        uncertainty-aware trajectory planning, diffusion-based opponent forecasting, deep reinforcement
+        learning, and scalable autonomy systems for real-world deployment.
       </p>
     </div>
   </section>
@@ -328,35 +355,97 @@
       </div>
     </div>
 
-    <div class="card">
-      <h3>Additional Autonomous Vehicle Work</h3>
-      <p>
-        Additional work includes autonomous trucks at Ozon Tech and self-driving vehicle projects
-        at Innopolis University.
-      </p>
-
-      <div class="gallery">
-        <img src="assets/ozon-truck-2.jpg" alt="Autonomous truck public-road testing visualization">
-        <img src="assets/ozon-truck-3.jpg" alt="Autonomous trucks in garage">
-        <img src="assets/innopolis-truck.jpg" alt="Autonomous truck at Innopolis University">
-      </div>
-    </div>
   </section>
 
   <section>
     <h2>Research & Publications</h2>
 
     <div class="card">
-      <h3>Selected Research Areas</h3>
+      <h3>Publication Themes</h3>
       <p>
-        My research focuses on autonomous driving, multi-modal perception, real-time 3D object detection,
-        sensor fusion, vision transformers, and end-to-end autonomous driving models.
+        My research connects real-time 3D perception, sensor fusion, vision-language models,
+        diffusion-based planning, and end-to-end autonomous driving. The work is especially focused
+        on making perception and decision-making systems robust enough for autonomous vehicles,
+        racing platforms, and mobile robots operating under limited labeled data.
       </p>
 
-      <ul>
-        <li><strong>ICRA 2025:</strong> Multi-modal end-to-end autonomous driving with temporal guidance.</li>
-        <li><strong>IROS 2025:</strong> Lightweight real-time 3D detection for autonomous driving and robotics.</li>
-        <li><strong>FLLM 2024:</strong> VLM-based autonomous driving assistant for complex road scenes.</li>
+      <p>
+        My PhD topic is <strong>Uncertainty-Aware Trajectory Planning in Autonomous Racing via
+        Diffusion-Based Opponent Forecasting and Deep Reinforcement Learning</strong>, combining
+        predictive modeling, risk-aware planning, and learning-based control for high-speed autonomous
+        racing scenarios.
+      </p>
+
+      <ul class="publication-list">
+        <li>
+          <div class="publication-title">
+            METDrive: Multi-modal End-to-end Autonomous Driving with Temporal Guidance
+          </div>
+          <div class="meta">
+            Co-author | IEEE ICRA 2025, Atlanta, USA | In print
+          </div>
+          <p class="publication-note">
+            End-to-end autonomous driving method that uses multi-modal inputs and temporal guidance
+            to improve driving decisions across complex road scenes.
+            <a href="https://arxiv.org/abs/2409.12667" target="_blank">arXiv</a>
+          </p>
+        </li>
+
+        <li>
+          <div class="publication-title">
+            FADet: A Multi-sensor 3D Object Detection Network based on Local Featured Attention
+          </div>
+          <div class="meta">
+            Co-author | IEEE Intelligent Vehicles Symposium 2025, Cluj-Napoca, Romania | Accepted
+          </div>
+          <p class="publication-note">
+            Multi-sensor 3D detection architecture for autonomous driving, using local feature attention
+            to strengthen fusion between perception modalities.
+            <a href="https://arxiv.org/abs/2405.11682" target="_blank">arXiv</a>
+          </p>
+        </li>
+
+        <li>
+          <div class="publication-title">
+            PerspectiveFusion: A Lightweight Real-time 3D Detector for Autonomous Driving
+          </div>
+          <div class="meta">
+            First author | IEEE/RSJ IROS 2025, Hangzhou, China | Submitted
+          </div>
+          <p class="publication-note">
+            Lightweight real-time 3D detection work aimed at practical autonomous driving deployment,
+            balancing perception accuracy with runtime constraints.
+          </p>
+        </li>
+
+        <li>
+          <div class="publication-title">
+            VDT-Auto: End-to-end Autonomous Driving with VLM-Guided Diffusion Transformers
+          </div>
+          <div class="meta">
+            Co-author | IEEE/RSJ IROS 2025, Hangzhou, China | Submitted
+          </div>
+          <p class="publication-note">
+            End-to-end autonomous driving approach combining vision-language guidance with diffusion
+            transformers for interpretable scene understanding and trajectory generation.
+            <a href="https://arxiv.org/abs/2502.20108" target="_blank">arXiv</a>
+          </p>
+        </li>
+
+        <li>
+          <div class="publication-title">
+            VLM-Auto: VLM-based Autonomous Driving Assistant with Human-like Behavior and Understanding for Complex Road Scenes
+          </div>
+          <div class="meta">
+            First author | IEEE FLLM 2024, Dubai, UAE | Published, pp. 501-507
+          </div>
+          <p class="publication-note">
+            Vision-language driving assistant for complex road scenes, focused on human-like reasoning
+            and explainable autonomous driving support.
+            <a href="https://ieeexplore.ieee.org/document/10852498" target="_blank">IEEE Xplore</a>
+            · <a href="https://arxiv.org/abs/2405.05885" target="_blank">arXiv</a>
+          </p>
+        </li>
       </ul>
     </div>
   </section>
@@ -394,11 +483,27 @@
 
     <div class="card">
       <h3>Skoltech</h3>
+      <div class="meta">PhD in Engineering Systems, Robotics | Moscow, Russia | 2025–Present</div>
+      <p>
+        Research topic: Uncertainty-Aware Trajectory Planning in Autonomous Racing via
+        Diffusion-Based Opponent Forecasting and Deep Reinforcement Learning.
+      </p>
+      <p>
+        Focus: autonomous racing, trajectory planning, opponent forecasting, uncertainty estimation,
+        diffusion models, and deep reinforcement learning.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Skoltech</h3>
       <div class="meta">MSc in Robotics | Moscow, Russia | 2023–2025</div>
       <p><strong>GPA:</strong> 5.0/5.0</p>
       <p>
         Focus: Autonomous Driving, Multi-modal Perception, Deep Learning.
         Research: 3D Object Detection using Vision Transformers and Sensor Fusion.
+      </p>
+      <p>
+        MSc thesis topic: Multi-modal 3D Object Detection for autonomous mobile robotics.
       </p>
     </div>
 
@@ -460,7 +565,7 @@
 
       <p>
         <strong>CV:</strong>
-        <a href="CV.pdf" target="_blank">Download PDF</a>
+        <a href="assets/CV.pdf" target="_blank">Download PDF</a>
       </p>
     </div>
   </section>
