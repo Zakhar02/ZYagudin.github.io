@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zakhar Yagudin | Robotics Engineer</title>
+  <title>Zakhar Yagudin — Lead Robotics & Perception Engineer</title>
+  <meta name="description" content="Zakhar Yagudin — Lead Robotics & Perception Engineer working on autonomous driving, GenAI, reinforcement learning, and high-speed robotics perception." />
+  <meta property="og:title" content="Zakhar Yagudin — Lead Robotics & Perception Engineer" />
+  <meta property="og:description" content="Lead Robotics / Perception Engineer with 5+ years in production 3D detection, sensor fusion, autonomous trucks, and A2RL autonomous racing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
 
   <style>
     body {
@@ -66,7 +71,23 @@
     .tagline {
       font-size: 21px;
       color: #ddd;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
+    }
+
+    .signature {
+      color: #f0f4f8;
+      font-weight: bold;
+      margin: 0 0 18px;
+    }
+
+    .open-to {
+      display: inline-block;
+      color: #101820;
+      background: #d7f3e3;
+      padding: 7px 11px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 0 0 18px;
     }
 
     .links a {
@@ -78,7 +99,7 @@
       background: white;
       padding: 24px;
       margin: 22px 0;
-      border-radius: 14px;
+      border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.07);
     }
 
@@ -94,6 +115,10 @@
       border-radius: 12px;
       object-fit: cover;
       max-height: 260px;
+    }
+
+    .compact-card p:last-child {
+      margin-bottom: 0;
     }
 
     .gallery {
@@ -181,17 +206,27 @@
     <div>
       <h1>Zakhar Yagudin</h1>
       <p class="tagline">
-        Robotics Engineer | Autonomous Driving | Computer Vision | Multi-modal Perception
+        Lead Robotics & Perception Engineer | Autonomous Driving · GenAI · PhD Candidate @ Skoltech
+      </p>
+
+      <p class="signature">
+        Shipped one of Europe’s first L4 freight deployments · 2nd place A2RL Silver League 2025 · 7 papers @ ICRA/IROS/IEEE IV/arXiv
+      </p>
+
+      <p class="open-to">
+        Open to Lead AV Perception · Robotics Perception · Embodied AI roles
       </p>
 
       <p>
-        I build perception and control systems for autonomous vehicles, mobile robots,
-        and safety-critical AI applications.
+        I build production 3D detection, sensor-fusion, planning, and control stacks for autonomous
+        trucks, autonomous racing platforms, and real-time robotic systems.
       </p>
 
       <div class="links">
-        <a href="mailto:Zakhar.Yagudin@skoltech.ru">Email</a>
+        <a href="mailto:zakhar.iagudin@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/zakhar-yagudin" target="_blank">LinkedIn</a>
+        <a href="https://github.com/zakhar02" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com/scholar?q=Zakhar+Yagudin" target="_blank">Google Scholar</a>
         <a href="assets/CV.pdf" target="_blank">Download CV</a>
       </div>
     </div>
@@ -206,16 +241,16 @@
     <h2>About</h2>
     <div class="card">
       <p>
-        I am a Robotics Engineer specializing in autonomous driving, multi-modal perception,
-        computer vision, and control systems. My work focuses on real-time 3D object detection,
-        sensor fusion, MPC-based control, and end-to-end autonomous driving systems.
+        I am a Lead Robotics / Perception Engineer with 5+ years building production 3D detection,
+        sensor-fusion, and control stacks for autonomous trucks, autonomous racing platforms, and
+        mobile robots. My target roles are Lead AV Perception, Robotics Perception, and Embodied AI.
       </p>
 
       <p>
-        My experience combines research, industrial software development, and technical leadership
-        across autonomous trucks, autonomous racing, mobile robotics, and self-driving car platforms.
-        I have worked with C/C++, Python, ROS, PyTorch, computer vision, deep learning, sensor fusion,
-        and optimal control.
+        My experience combines research, industrial software development, and technical leadership.
+        At Khalifa University / Team FlyEagle, I lead a 10-engineer perception-planning-control team
+        building an A2RL race car autonomy stack for 270+ km/h operation. At Ozon Tech, I shipped
+        control software for MAN TGM and Volvo FH autonomous freight trucks.
       </p>
 
       <p>
@@ -233,17 +268,19 @@
       <img src="assets/a2rl-car.jpg" alt="A2RL autonomous race car">
       <div>
         <h3>A2RL / Team FlyEagle — Autonomous Racing Perception</h3>
-        <div class="meta">Lead Computer Vision Engineer | Abu Dhabi, UAE | 2024–Present</div>
+        <div class="meta">Lead Computer Vision Engineer | Abu Dhabi, UAE | Jan 2025–Present</div>
 
         <p>
-          Developed real-time 3D object detection algorithms for autonomous racing systems while
-          leading a small computer vision team. The work focused on high-speed perception,
-          robustness under dynamic racing conditions, and integration into an autonomous driving stack.
+          Lead a 10-engineer team building the full autonomy stack for an A2RL race car operating at
+          270+ km/h, with ownership across architecture, roadmap, sprint decomposition, code review,
+          and CI/CD.
         </p>
 
         <p>
-          <span class="highlight">Result:</span> Contributed to achieving
-          <span class="highlight">2nd place in the A2RL Silver Race</span>.
+          <span class="highlight">Result:</span> Secured
+          <span class="highlight">2nd place in A2RL Silver League 2025</span> against 12 international
+          university teams by shipping a 30 FPS camera+LiDAR 3D-detection pipeline with &lt;40 ms
+          end-to-end latency on Jetson AGX Orin.
         </p>
 
         <p>
@@ -257,12 +294,12 @@
       <img src="assets/ku-lab.jpg" alt="Khalifa University self-driving car laboratory">
       <div>
         <h3>Khalifa University — Self-Driving Cars Laboratory</h3>
-        <div class="meta">Research Mobility Program | Abu Dhabi, UAE | 2025</div>
+        <div class="meta">Autonomous Driving Research | Abu Dhabi, UAE | 2025</div>
 
         <p>
-          Conducted research in autonomous driving perception within the Self-Driving Cars Laboratory
-          at Khalifa University. The work focused on perception systems, autonomous mobility platforms,
-          and applied robotics research.
+          Conducted research in autonomous driving perception within Khalifa University’s Self-Driving
+          Cars Laboratory, focusing on cross-domain 3D perception, evaluation harnesses, and applied
+          autonomy research.
         </p>
 
         <p>
@@ -275,17 +312,18 @@
       <img src="assets/168robotics.jpg" alt="168Robotics autonomous cleaning robot">
       <div>
         <h3>168ROBOTICS — Multi-modal 3D Object Detection</h3>
-        <div class="meta">Researcher, Computer Vision | Moscow, Russia | 2024–Present</div>
+        <div class="meta">Computer Vision Researcher | Moscow, Russia | Jun 2024–Present</div>
 
         <p>
-          Researched and developed multi-modal 3D object detection methods for autonomous mobile
-          robotics platforms. The work involved deep learning, sensor fusion, model evaluation,
-          and integration into real robotic systems.
+          Designed and shipped a LiDAR 3D-detection baseline from scratch for autonomous platforms,
+          including the data pipeline, model architecture, and evaluation protocol on a 15k-frame
+          internal dataset.
         </p>
 
         <p>
-          <span class="highlight">Result:</span> Improved detection accuracy from
-          <span class="highlight">70% to 80%</span>.
+          <span class="highlight">Result:</span> Reached
+          <span class="highlight">NDS 80</span> and reduced inference latency 1.5× via TensorRT INT8
+          quantization and CUDA-kernel tuning, enabling 90 FPS deployment on Jetson Orin.
         </p>
 
         <p>
@@ -299,17 +337,17 @@
       <img src="assets/ozon-truck-1.jpg" alt="Ozon Tech autonomous truck">
       <div>
         <h3>Ozon Tech — Autonomous Truck Control System</h3>
-        <div class="meta">Software Engineer, Autonomous Driving | Innopolis, Russia | 2021–2024</div>
+        <div class="meta">Software Engineer, Autonomous Driving | Innopolis, Russia | Jan 2021–May 2024</div>
 
         <p>
-          Developed C/C++ software components for autonomous truck control systems and contributed
-          to integration within the full autonomous driving stack. The work included control-system
-          design, testing, debugging, and applied robotics software development.
+          Owned the C++17 lateral and longitudinal control module for MAN TGM and Volvo FH autonomous
+          freight trucks, running on an STM32-based ECU at approximately 100 Hz.
         </p>
 
         <p>
-          <span class="highlight">Impact:</span> Contributed to early autonomous truck systems
-          deployment in Europe.
+          <span class="highlight">Impact:</span> Achieved approximately 30 cm lateral tracking error at
+          80 km/h on M-7 public-road trials and shipped the controller to revenue trucks logging 100+
+          km of autonomous miles on the M-7 corridor.
         </p>
 
         <p>
@@ -363,7 +401,7 @@
     <div class="card">
       <h3>Publication Themes</h3>
       <p>
-        My research connects real-time 3D perception, sensor fusion, vision-language models,
+        Full list: 7 papers, 3 first-author, and 75+ citations on Google Scholar. My research connects real-time 3D perception, sensor fusion, vision-language models,
         diffusion-based planning, and end-to-end autonomous driving. The work is especially focused
         on making perception and decision-making systems robust enough for autonomous vehicles,
         racing platforms, and mobile robots operating under limited labeled data.
@@ -379,10 +417,37 @@
       <ul class="publication-list">
         <li>
           <div class="publication-title">
+            PerspectiveFusion: A Lightweight Real-time 3D Detector for Autonomous Driving
+          </div>
+          <div class="meta">
+            First author | IEEE/RSJ IROS 2025
+          </div>
+          <p class="publication-note">
+            Lightweight real-time 3D detector for practical autonomous driving deployment, balancing
+            accuracy and runtime constraints for production-oriented perception stacks.
+          </p>
+        </li>
+
+        <li>
+          <div class="publication-title">
+            EagleVision: A Multi-Task Benchmark for Cross-Domain Perception in High-Speed Autonomous Racing
+          </div>
+          <div class="meta">
+            First author | arXiv 2026
+          </div>
+          <p class="publication-note">
+            Multi-task benchmark for high-speed autonomous racing with 14,893 Indy Autonomous
+            Challenge frames, 1,163 A2RL Real frames, and 12,000 simulator-generated annotations.
+            <a href="https://arxiv.org/abs/2604.11400" target="_blank">arXiv</a>
+          </p>
+        </li>
+
+        <li>
+          <div class="publication-title">
             METDrive: Multi-modal End-to-end Autonomous Driving with Temporal Guidance
           </div>
           <div class="meta">
-            Co-author | IEEE ICRA 2025, Atlanta, USA | In print
+            Co-author | IEEE ICRA 2025, Atlanta, USA | In press
           </div>
           <p class="publication-note">
             End-to-end autonomous driving method that uses multi-modal inputs and temporal guidance
@@ -407,23 +472,10 @@
 
         <li>
           <div class="publication-title">
-            PerspectiveFusion: A Lightweight Real-time 3D Detector for Autonomous Driving
-          </div>
-          <div class="meta">
-            First author | IEEE/RSJ IROS 2025, Hangzhou, China | Submitted
-          </div>
-          <p class="publication-note">
-            Lightweight real-time 3D detection work aimed at practical autonomous driving deployment,
-            balancing perception accuracy with runtime constraints.
-          </p>
-        </li>
-
-        <li>
-          <div class="publication-title">
             VDT-Auto: End-to-end Autonomous Driving with VLM-Guided Diffusion Transformers
           </div>
           <div class="meta">
-            Co-author | IEEE/RSJ IROS 2025, Hangzhou, China | Submitted
+            Co-author | arXiv 2025
           </div>
           <p class="publication-note">
             End-to-end autonomous driving approach combining vision-language guidance with diffusion
@@ -444,37 +496,25 @@
             and explainable autonomous driving support.
             <a href="https://ieeexplore.ieee.org/document/10852498" target="_blank">IEEE Xplore</a>
             · <a href="https://arxiv.org/abs/2405.05885" target="_blank">arXiv</a>
+            · Citations: 57+
+          </p>
+        </li>
+
+        <li>
+          <div class="publication-title">
+            Collaborative Trajectory Prediction via Late Fusion
+          </div>
+          <div class="meta">
+            Co-author | arXiv 2026
+          </div>
+          <p class="publication-note">
+            Model-agnostic late-fusion framework for collaborative V2V trajectory forecasting that
+            reduces miss rate and improves trajectory success rate across OPV2V, V2V4Real, and
+            DeepAccident.
+            <a href="https://arxiv.org/abs/2604.22973" target="_blank">arXiv</a>
           </p>
         </li>
       </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Entrepreneurship</h2>
-
-    <div class="card">
-      <h3>TECHFRENS</h3>
-      <div class="meta">CEO | Blockchain & Software Development</div>
-      <p>
-        Leading a small development team delivering blockchain-related software projects
-        from concept to deployment.
-      </p>
-      <p>
-        <a href="https://techfrens.pro/" target="_blank">techfrens.pro</a>
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Straighten Up!</h3>
-      <div class="meta">Founder & CEO | Health, Fitness and Well-being Startup</div>
-      <p>
-        Founded a startup focused on posture, health, fitness, and well-being.
-        The project is registered at Skolkovo Foundation.
-      </p>
-      <p>
-        <a href="https://straightenup.netlify.app/" target="_blank">straightenup.netlify.app</a>
-      </p>
     </div>
   </section>
 
@@ -519,6 +559,19 @@
   </section>
 
   <section>
+    <h2>Founder Experience</h2>
+
+    <div class="card compact-card">
+      <p>
+        <strong>StraightenUp</strong> — AI-powered wearable for posture monitoring, Skolkovo resident,
+        semifinalist at Sevan Startup Summit 2025 ·
+        <strong>Chain of Blocks</strong> — TON smart-contract mobile app, acquired in 2025 ·
+        <strong>TECHFRENS</strong> — small software team delivering blockchain projects.
+      </p>
+    </div>
+  </section>
+
+  <section>
     <h2>Skills</h2>
 
     <div class="card skills">
@@ -526,6 +579,9 @@
       <span>Python</span>
       <span>ROS</span>
       <span>PyTorch</span>
+      <span>TensorRT</span>
+      <span>CUDA</span>
+      <span>ONNX</span>
       <span>Computer Vision</span>
       <span>3D Object Detection</span>
       <span>Sensor Fusion</span>
@@ -547,19 +603,32 @@
 
     <div class="card">
       <p>
-        I am interested in robotics, autonomous driving, computer vision, multi-modal perception,
-        and applied AI roles.
+        I am currently open to Lead AV Perception, Robotics Perception, and Embodied AI roles.
       </p>
 
       <p>
         <strong>Email:</strong>
-        <a href="mailto:Zakhar.Yagudin@skoltech.ru">Zakhar.Yagudin@skoltech.ru</a>
+        <a href="mailto:zakhar.iagudin@gmail.com">zakhar.iagudin@gmail.com</a>
       </p>
 
       <p>
         <strong>LinkedIn:</strong>
         <a href="https://www.linkedin.com/in/zakhar-yagudin" target="_blank">
           linkedin.com/in/zakhar-yagudin
+        </a>
+      </p>
+
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/zakhar02" target="_blank">
+          github.com/zakhar02
+        </a>
+      </p>
+
+      <p>
+        <strong>Google Scholar:</strong>
+        <a href="https://scholar.google.com/scholar?q=Zakhar+Yagudin" target="_blank">
+          Zakhar Yagudin publications
         </a>
       </p>
 
